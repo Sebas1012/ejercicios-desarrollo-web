@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- Usar datalist es la mejor practica porque nos permite definir opciones y capturar las que no existan, eso podemos validarlo
+            y hacer que el usuario pueda hacer busquedas en listas muy grandes. 
+        
+            Un ejemplo de uso podria ser una lista de paises, dado que son muchos el usuario al empezar a escribir le aparecerian
+            las opciones que coincidan-->
+            <h2>Select 1 - Buena Practica</h2>
+            <form action="">
+                <input list="cursos">
+                <datalist id="cursos">
+                    <option value="Ruby"></option>
+                    <option value="Java"></option>
+                    <option value="Python"></option>
+                    <option value="Elixir"></option>
+                </datalist>
+            </form>
+        </section>
+        <section>
+            <!-- Puede ser buena practica en caso de que sean pocas opciones pero no por experiencia de usuario no es lo mejor. 
+            
+            Un ejemplo de uso puede ser el genero de una persona, dado que son pocas opciones y el usuario puede elegir una mas facil.-->
+            <h2>Select 2 - No tan buena practica.</h2>
+            <form action="">
+                <select name="cursos" id="">
+                    <option value="Ruby">Ruby</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="Elixir">Elixir</option>
+                </select>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

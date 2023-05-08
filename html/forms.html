@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+
+        <!-- label se utiliza para asociar una etiqueta de formulario con su correspondiente campo de entrada. 
+        Esto permite a los usuarios hacer clic en la etiqueta para activar el campo de entrada, en lugar de tener que hacer clic 
+        directamente en el campo de entrada en sí. -->
+        <label for="nombre">
+            <span>Nombre: </span>
+            <!-- Input tipo texto que ingresa texto plano -->
+            <input id="nombre" type="text" autocomplete="name">
+        </label>
+        <label for="nacimiento">
+            <span>Fecha nacimiento: </span>
+            <!-- Input tipo fecha que muestra un calendario -->
+            <input id="nacimiento" type="date" required>
+        </label>
+        <label for="hora-nacimiento">
+            <span>Hora nacimiento: </span>
+            <!-- Input tipo time que permite seleccionar una hora -->
+            <input id="hora-nacimiento" type="time" required>
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Los argumentos autocomplete y required nos permiten:
+    
+        Required: Hacer que un campo sea obligatorio.
+        Autocomplete: Hacer que un campo se autocomplete segun el parametro que le demos.-->
+</body>
+</html>

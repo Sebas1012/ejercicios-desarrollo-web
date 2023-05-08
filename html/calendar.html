@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- El calendario uno nos permite tener mayor control al dividir el mismo en
+            hora, mes, semana, etc. -->
+            <h2>Calendario 1</h2>
+            <form action="">
+                <label for="mes">
+                    <span>Mes</span>
+                    <input id="mes" type="month">
+                </label>
+                <label for="semana">
+                    <span>Semana</span>
+                    <input id="semana" type="week">
+                </label>
+                <label for="dia">
+                    <span>Dia</span>
+                    <input id="dia" type="date">
+                </label>
+                <label for="hora">
+                    <span>Hora</span>
+                    <input id="hora" type="time">
+                </label>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section>
+            <!-- El calendario 2 es un solo input en que podemos obtener parte de la informacion anterior sin generar tantos inputs -->
+            <h2>Calendario 2</h2>
+            <form action="">
+                <label for="fecha">
+                    <span>Fecha</span>
+                    <input type="datetime-local" name="Calendario" id="fecha">
+                </label>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
