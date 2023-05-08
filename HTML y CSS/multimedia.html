@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- En promedio una imagen para web deberia pesar entre 100kb y 70kb  y para eso podemos usar las siguentes web:
+        Tiny PNG (Comprime el tamaño de una imagen, para hacerla más ligera.): https://tinypng.com/
+        Verefix (Elimina los metadatos de una imagen, para reducir su tamaño.): https://www.verexif.com/
+    -->
+    <main>
+        <section>
+
+            <!-- FIGURE es una etiqueta contenedora que de forma semantica nos permite reemplazar el uso del div -->
+            <figure>
+                <!-- La etiqueta IMG nos permite cargar y mostrar una imagen donde su atributo src es donde se encuentra la imagen
+                mientars que alt es un texto alternativo que se mostrara en caso de que nuestra imagen no pueda ser mostrada. -->
+                <img src="./pics/medium.jpg" alt="Imagen de unos gatitos.">
+
+                <!-- FIGCAPTION es una etiqueta que nos permite de manera semantica agregar un texto descriptivo de pie de foto
+                cosa que hariamos con un div y una etiqueta p y que como tal no es una buena practica. -->
+                <figcaption>Es una imagen de unos gatitos.</figcaption>
+
+                <!-- La etiqueta VIDEO nos permite cargar un video aunque es importante implementar ciertias atributos
+                para poder interactuar y mejorar su cargar, por ejemplo:
+            
+                controls: permite que el video tena controles para pausar, play y linea de tiempo, si no se implementa directamente
+                el video se vera como una imagen y no se reproducira
+            
+                preload: permite definir como se cargara el videa, ejemplo, si durante la carga de la web o etc.-->
+                <video controls preload="auto">
+
+                    <!-- SOURCE permite tener varias alteranivas con varios formatos de video como MP4, M4V, etc y que
+                    segun lo que el navegador entienda reproduzca el video que pueda. NOTA: siempre respeta el primer source
+                    si no lo entiende pasa al siguente, es decir, si en este caso el navegador no puede reproducir el mp4 
+                    pasaria al m4v-->
+                    <source src="https://res.cloudinary.com/dfiarsxli/video/upload/v1681334291/marled_fotos/fiesta_ioprom.mp4">
+                    <source src="https://res.cloudinary.com/dfiarsxli/video/upload/v1681334291/marled_fotos/fiesta_ioprom.m4v">
+                </video>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
